@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2_blur"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/should_black" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/popup_menu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/menu_img" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/achieve_scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_corner3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="운동을 시작합니다! 제한시간안에 사진을 찍어주세요"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/countdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textAlignment="center"
+        android:textSize="60dp" />
+
+
+    <ImageView
+        android:id="@+id/bmp1image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="목적지 도착!" />
+    </LinearLayout>
+
+</LinearLayout>
