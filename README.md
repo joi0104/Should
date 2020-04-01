@@ -1,2 +1,2 @@
-# Should
+# should
 the first android project
